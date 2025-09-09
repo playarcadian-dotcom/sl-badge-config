@@ -1,0 +1,10 @@
+{
+  "functions": {
+    "api/save.js": {
+      "maxDuration": 10
+    },
+    "api/badge-config/[id].js": {
+      "maxDuration": 10
+    }
+  }
+}
