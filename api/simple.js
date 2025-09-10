@@ -114,10 +114,6 @@ export default function handler(req, res) {
         
         <div class="config-box" id="configContent">${decoded}<button class="copy-button" onclick="copyConfig()">Copy to Clipboard</button></div>
         
-        <div class="important-note">
-            <strong>⚠️ Important:</strong> The badge_config notecard already exists in your Merit Badge Controller object. You'll be replacing its contents, not creating a new notecard.
-        </div>
-        
         <div class="instructions">
             <h3>📋 How to use this configuration:</h3>
             <ol>
