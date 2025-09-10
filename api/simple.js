@@ -103,17 +103,6 @@ export default function handler(req, res) {
             display: inline-block;
             margin-bottom: 20px;
         }
-        .important-note {
-            background: #fff3cd;
-            border-left: 4px solid #ffc107;
-            padding: 12px;
-            margin-bottom: 20px;
-            border-radius: 4px;
-            color: #856404;
-        }
-        .important-note strong {
-            color: #856404;
-        }
     </style>
 </head>
 <body>
