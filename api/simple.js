@@ -103,6 +103,17 @@ export default function handler(req, res) {
             display: inline-block;
             margin-bottom: 20px;
         }
+        .important-note {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 12px;
+            margin-bottom: 20px;
+            border-radius: 4px;
+            color: #856404;
+        }
+        .important-note strong {
+            color: #856404;
+        }
     </style>
 </head>
 <body>
@@ -114,15 +125,21 @@ export default function handler(req, res) {
         
         <div class="config-box" id="configContent">${decoded}<button class="copy-button" onclick="copyConfig()">Copy to Clipboard</button></div>
         
+        <div class="important-note">
+            <strong>⚠️ Important:</strong> The badge_config notecard already exists in your Merit Badge Controller object. You'll be replacing its contents, not creating a new notecard.
+        </div>
+        
         <div class="instructions">
             <h3>📋 How to use this configuration:</h3>
             <ol>
-                <li>Click the "Copy to Clipboard" button above</li>
-                <li>In Second Life, create a new notecard in your badge system object</li>
-                <li>Name the notecard exactly: <strong>badge_config</strong></li>
-                <li>Paste the configuration into the notecard</li>
-                <li>Save the notecard</li>
-                <li>Your badge system is now configured!</li>
+                <li>Click the <strong>"Copy to Clipboard"</strong> button above</li>
+                <li>In Second Life, right-click your <strong>Merit Badge Controller</strong> object</li>
+                <li>Select <strong>Edit</strong> → Go to the <strong>Content</strong> tab</li>
+                <li>Double-click the existing <strong>badge_config</strong> notecard to open it</li>
+                <li>Select all existing text (Ctrl+A) and delete it</li>
+                <li>Paste the new configuration (Ctrl+V)</li>
+                <li>Click <strong>Save</strong></li>
+                <li>Your badge system is now updated with the new badges!</li>
             </ol>
         </div>
     </div>
